@@ -1,0 +1,28 @@
+Como baixar e instalar o Microsoft Office Professional Plus 2019. Gratuito e ilimitado. Disponibilizado pela própria Microsoft.
+
+PASSO A PASSO:
+
+1. Baixar o "officedeploymenttool" no idioma padrão da página (inglês) em: https://www.microsoft.com/en-us/download/details.aspx?id=49117
+
+2. Baixar o arquivo Customization Tool (x32 ou x64 bits. Se você nao sabe qual escolher, você precisa descobrir qual a arquitetura do seu PC nas configurações): https://config.office.com/deploymentsettings
+	2.1 Na aba "Office Suites" escolha a opção "Office Professional Plus 2019 - Licença de volume";
+	2.2 Desça a página para baixo até encontrar a aba "Idioma". Neste, escolha o idioma de sua preferência;
+	2.3 Em seguida, clique em "Exportar" (em azul, ao canto superior direito da página), escolha o formato de arquivo do meio e clique OK (Formatos Office Open XML), aceite os termos, renomeie o arquivo com o nome "configuration" e exporte.
+	
+3. Crie uma pasta chamada "office2019" e salve ela no Disco Local (C:)
+	3.1 Salve o arquivo officedeploymenttool.exe dentro desta pasta;	
+	3.2 Salve o arquivo configuration.xml também dentro desta pasta.
+
+4. Execute o programa "officedeploymenttool.exe" como administrador, ele abrirá uma janela para extração de arquivos, em seguida selecione a pasta "office2019" criada anteriormente no C:\
+
+5. Executar comandos no prompt de comando (CMD)
+	5.1 Abra o CMD (Prompt de comando) como administrador;
+	5.2 Dentro do CMD, digite o comando "cd c:\office2019" e dê enter;
+	5.3 Em seguida, digite o comando "setup.exe /configure configuration.xml" e dê enter;
+	5.4 A instalação do Microsoft Office Professional Plus 2019 iniciará automaticamente. 
+
+POSSÍVEIS ERROS:
+
+1. Você esqueceu de executar o officedeploymenttool
+2. Você esqueceu de salvar os arquivos dentro da pasta "office2019" localizada no C:\
+3. O arquivo "configuration" está com o nome "Configuração"
